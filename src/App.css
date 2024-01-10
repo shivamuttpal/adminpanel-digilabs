@@ -1,8 +1,5 @@
-/* src/App.css */
-
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f4f4f4;
   margin: 0;
   padding: 0;
   display: flex;
@@ -11,46 +8,52 @@ body {
   height: 100vh;
 }
 
-.App {
-  text-align: center;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
-h1 {
-  color: #333;
+.bigContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.container {
+  display: flex;
 }
 
 form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 300px;
+  margin-right: 20px;
 }
 
-label {
-  margin: 10px 0;
-  font-weight: bold;
+form label {
+  display: block;
+  margin-bottom: 10px;
 }
 
-input {
+form input {
+  width: 100%;
   padding: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+form button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.emails-table {
   width: 300px;
 }
 
-button {
-  padding: 10px 20px;
-  background-color: #4caf50;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s;
+.emails-table table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-button:hover {
-  background-color: #45a049;
+.emails-table th, .emails-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
 }
